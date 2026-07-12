@@ -23,6 +23,8 @@ npm run storybook
 - `src/theme`: design tokens and global styles
 - `src/data`: dummy banking data
 - `src/components/*.stories.jsx`: Storybook examples and prop docs
+- `src/routes.manifest.js`: route definitions
+- `src/routes.js`: route lookup and page mapping
 - `/`: intentionally blank home page for your own work
 - `/example-page`: finished example that combines the components
 
