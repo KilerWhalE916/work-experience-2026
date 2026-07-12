@@ -20,6 +20,7 @@ npm run storybook
 ## Project Shape
 
 - `src/components`: reusable components
+- `src/components/Main.jsx` and `src/components/Flex.jsx`: layout helpers for centering and arranging sections
 - `src/theme`: design tokens and global styles
 - `src/data`: dummy banking data
 - `src/components/*.stories.jsx`: Storybook examples and prop docs

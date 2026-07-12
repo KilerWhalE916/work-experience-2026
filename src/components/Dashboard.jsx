@@ -1,24 +1,10 @@
 import styled from "styled-components";
-import {
-  accounts,
-  savingsGoals,
-  spending,
-  transactions,
-} from "../data/bankingData";
-import { AccountCard } from "./AccountCard";
-import { Alert } from "./Alert";
-import { Button } from "./Button";
-import { Card } from "./Card";
-import { SpendingChart } from "./SpendingChart";
-import { SavingsGoal } from "./SavingsGoal";
-import { TransactionList } from "./TransactionList";
-import { TransferForm } from "./TransferForm";
+import { VerticalFlex } from "./Flex";
 
-const Shell = styled.main`
-  display: grid;
-  gap: 1.5rem;
-  padding: clamp(1rem, 4vw, 3rem);
-`;
+export const Dashboard = styled(VerticalFlex).attrs({
+  as: "section",
+  gap: "lg",
+})``;
 
 const Header = styled.div`
   display: flex;
@@ -58,51 +44,16 @@ const CardTitle = styled.h3`
   margin: 0 0 1rem;
 `;
 
-export function Dashboard() {
+export function DashboardHeader({ action, children, title }) {
   return (
-    <Shell id="accounts">
-      <Header>
-        <div>
-          <Title>Good afternoon, Sam</Title>
-          <p>Here is your fictional money, looking surprisingly organised.</p>
-        </div>
-        <Button variant="ghost">Freeze Card</Button>
-      </Header>
-
-      <Grid>
-        {accounts.map((account) => (
-          <AccountCard key={account.number} {...account} />
-        ))}
-      </Grid>
-
-      <Alert>
-        Your savings pot is close to its goal. Add a custom student message here.
-      </Alert>
-
-      <FeatureGrid>
-        <Card id="transfer">
-          <CardTitle>Make a Transfer</CardTitle>
-          <TransferForm />
-        </Card>
-        <Card id="spending">
-          <CardTitle>Spending Summary</CardTitle>
-          <SpendingChart items={spending} />
-        </Card>
-      </FeatureGrid>
-
-      <Card>
-        <CardTitle>Savings Goals</CardTitle>
-        <FeatureGrid>
-          {savingsGoals.map((goal) => (
-            <SavingsGoal key={goal.name} {...goal} />
-          ))}
-        </FeatureGrid>
-      </Card>
-
-      <Card elevated>
-        <CardTitle>Recent Transactions</CardTitle>
-        <TransactionList transactions={transactions} />
-      </Card>
-    </Shell>
+    <Header>
+      <div>
+        <Title>{title}</Title>
+        {children}
+      </div>
+      {action}
+    </Header>
   );
 }
+
+export { CardTitle, FeatureGrid as DashboardFeatureGrid, Grid as DashboardGrid };
