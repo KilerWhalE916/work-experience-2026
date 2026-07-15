@@ -17,7 +17,7 @@ const Text = styled.div`
 
 const Eyebrow = styled.p`
   margin: 0;
-  color: ${({ theme }) => theme.colors.green700};
+  color: ${({ theme }) => theme.colors.blue900};
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -25,7 +25,7 @@ const Eyebrow = styled.p`
 
 const Title = styled.h1`
   margin: 0;
-  color: ${({ theme }) => theme.colors.green900};
+  color: ${({ theme }) => theme.colors.blue900};
   font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 1.05;
 `;

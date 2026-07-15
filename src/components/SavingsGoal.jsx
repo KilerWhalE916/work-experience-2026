@@ -22,7 +22,7 @@ const Track = styled.div`
 const Fill = styled.div`
   width: ${({ percent }) => percent}%;
   height: 100%;
-  background: ${({ theme }) => theme.colors.green500};
+  background: ${({ bg }) => bg};
 `;
 
 const HelpText = styled.p`
@@ -30,7 +30,7 @@ const HelpText = styled.p`
   color: ${({ theme }) => theme.colors.muted};
 `;
 
-export function SavingsGoal({ name, saved, target }) {
+export function SavingsGoal({ name, saved, target,background }) {
   const percent = Math.min(Math.round((saved / target) * 100), 100);
 
   return (
@@ -40,7 +40,7 @@ export function SavingsGoal({ name, saved, target }) {
         <span>{percent}%</span>
       </TopLine>
       <Track aria-label={`${name} savings progress`}>
-        <Fill percent={percent} />
+        <Fill percent={percent} bg={background}/>
       </Track>
       <HelpText>
         £{saved} saved of £{target}

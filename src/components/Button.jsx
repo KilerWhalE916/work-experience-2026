@@ -3,8 +3,8 @@ import styled, { css } from "styled-components";
 const variants = {
   primary: css`
     color: white;
-    background: ${({ theme }) => theme.colors.green700};
-    border-color: ${({ theme }) => theme.colors.green700};
+    background: ${({ theme }) => theme.colors.blue900};
+    border-color: ${({ theme }) => theme.colors.blue900};
   `,
   secondary: css`
     color: ${({ theme }) => theme.colors.green900};
@@ -25,7 +25,9 @@ export const Button = styled.button`
   padding: 0.7rem 1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 160ms ease, box-shadow 160ms ease;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
 
   ${({ variant = "primary" }) => variants[variant]}
 
