@@ -38,17 +38,16 @@ export function Navbar({ bankName, onDashboardClick }) {
   return (
     <Bar>
       <Brand>
-        <Landmark size={24} />
+        <Landmark onClick={()=>{window.location.href="/"}}size={24} />
         {bankName}
       </Brand>
       <Links aria-label="Main navigation">
-        <LinkText href="#accounts">Accounts</LinkText>
-        <LinkText href="#spending">Spending</LinkText>
-        <LinkText href="#transfer">Transfer</LinkText>
+        <LinkText href="morgagecalculator">Mortgage Calculator</LinkText>
+        <LinkText href="spending">Spending</LinkText>
+        <LinkText href="transfer">Transfer</LinkText>
+        <LinkText href="credit-score">Credit Score</LinkText>
+        <LinkText href="currency-conv-page">Converter</LinkText>
       </Links>
-      <Button variant="secondary" onClick={onDashboardClick}>
-        Dashboard
-      </Button>
     </Bar>
   );
 }
