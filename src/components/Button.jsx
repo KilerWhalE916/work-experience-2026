@@ -3,8 +3,8 @@ import styled, { css } from "styled-components";
 const variants = {
   primary: css`
     color: white;
-    background: ${({ theme }) => theme.colors.green700};
-    border-color: ${({ theme }) => theme.colors.green700};
+    background: ${({ theme }) => theme.colors.blue900};
+    border-color: ${({ theme }) => theme.colors.blue900};
   `,
   secondary: css`
     color: ${({ theme }) => theme.colors.green900};
