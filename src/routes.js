@@ -1,9 +1,18 @@
-import { ExamplePage, HomePage,Intro,SpendingPage,TransferPage } from "./pages";
+import {
+  ExamplePage,
+  HomePage,Intro,SpendingPage,TransferPage,
+  Login,
+  CurrencyConvPage,
+  CreditScore,
+} from "./pages";
 import { routeManifest } from "./routes.manifest";
 
 const routeComponents = {
   ExamplePage,
   HomePage,
+  Login,
+  CurrencyConvPage,
+  CreditScore,
   Intro,
   TransferPage,
   SpendingPage,

@@ -22,4 +22,19 @@ export const routeManifest = [
     label: "Spending",
     
   },
+  {
+    path: "/login",
+    component: "Login",
+    label: "Login",
+  },
+  {
+    path: "/currency-conv-page",
+    component: "CurrencyConvPage",
+    label: "CurrencyConvPage",
+  },
+  {
+    path: "/credit-score",
+    component: "CreditScore",
+    label: "CreditScore",
+  },
 ];

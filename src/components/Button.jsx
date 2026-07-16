@@ -25,7 +25,9 @@ export const Button = styled.button`
   padding: 0.7rem 1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 160ms ease, box-shadow 160ms ease;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
 
   ${({ variant = "primary" }) => variants[variant]}
 

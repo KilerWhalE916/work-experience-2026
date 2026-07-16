@@ -1,5 +1,8 @@
-export { ExamplePage } from "./ExamplePage";
 export { HomePage } from "./HomePage";
+export { ExamplePage } from "./ExamplePage";
+export { Login } from "./Login";
+export { CurrencyConvPage } from "./CurrencyConvPage";
+export { CreditScore } from "./CreditScore";
 export { Intro } from "./Intro";
 export { SpendingPage } from "./SpendingPage";
 export { TransferPage } from "./TransferPage";
