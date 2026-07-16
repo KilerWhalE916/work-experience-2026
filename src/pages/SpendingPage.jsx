@@ -15,6 +15,7 @@ export function SpendingPage() {
       <Navbar variant="primary" children={"Credit"}></Navbar>
 <AccountCard name={"Total Balance"} number={4321} balance={"£70853"} change={"Active"} variant={"midnight"} />
 <br />
+      <h2>Your recent spendings</h2>
       <SpendingChart items={data} />
     </Main>
   );

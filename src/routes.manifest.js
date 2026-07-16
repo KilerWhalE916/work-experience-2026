@@ -37,4 +37,9 @@ export const routeManifest = [
     component: "CreditScore",
     label: "CreditScore",
   },
+  {
+    path: "/mortgagecalculator",
+    component: "MortgageCalc",
+    label: "MortgageCalc",
+  },
 ];

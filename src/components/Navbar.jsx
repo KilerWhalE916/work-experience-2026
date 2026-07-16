@@ -36,19 +36,26 @@ const LinkText = styled.a`
 
 export function Navbar({ bankName, onDashboardClick }) {
   return (
-    <Bar>
-      <Brand>
-        <Landmark onClick={()=>{window.location.href="/"}}size={24} />
-        {bankName}
+    <div>
+      <Bar style={{ borderRadius: "20px" }}>
+        <Brand
+          onClick={() => {
+            window.location.href = "/";
+          }}
+        >
+          <Landmark size={24} />
+          {bankName}
           <LinkText> Best Bank </LinkText>
-      </Brand>
-      <Links aria-label="Main navigation">
-        <LinkText href="mortgagecalculator">Mortgage Calculator</LinkText>
-        <LinkText href="spending">Spending</LinkText>
-        <LinkText href="transfer">Transfer</LinkText>
-        <LinkText href="credit-score">Credit Score</LinkText>
-        <LinkText href="currency-conv-page">Converter</LinkText>
-      </Links>
-    </Bar>
+        </Brand>
+        <Links aria-label="Main navigation">
+          <LinkText href="mortgagecalculator">Mortgage Calculator</LinkText>
+          <LinkText href="spending">Spending</LinkText>
+          <LinkText href="transfer">Transfer</LinkText>
+          <LinkText href="credit-score">Credit Score</LinkText>
+          <LinkText href="currency-conv-page">Converter</LinkText>
+        </Links>
+      </Bar>
+      <br />
+    </div>
   );
 }

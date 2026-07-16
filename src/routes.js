@@ -4,6 +4,7 @@ import {
   Login,
   CurrencyConvPage,
   CreditScore,
+  MortgageCalc,
 } from "./pages";
 import { routeManifest } from "./routes.manifest";
 
@@ -16,6 +17,7 @@ const routeComponents = {
   Intro,
   TransferPage,
   SpendingPage,
+  MortgageCalc,
  
 };
 
