@@ -20,7 +20,7 @@ const Split = styled.div`
 export function TransferForm() {
   function handleSubmit(event) {
     event.preventDefault();
-    alert("Nice! In the real world this would need security checks.");
+    alert("Money sent");
   }
 
   return (

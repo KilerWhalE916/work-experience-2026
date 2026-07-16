@@ -51,7 +51,6 @@ export function TransactionList({ transactions }) {
           </Amount>
         </Row>
       ))}
-      <Badge tone="blue">Dummy transactions</Badge>
     </List>
   );
 }

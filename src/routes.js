@@ -1,6 +1,6 @@
 import {
   ExamplePage,
-  HomePage,Intro,SpendingPage,TransferPage,HistoryPage,
+  HomePage,Intro,SpendingPage,TransferPage,
   Login,
   CurrencyConvPage,
   CreditScore,
@@ -16,7 +16,7 @@ const routeComponents = {
   Intro,
   TransferPage,
   SpendingPage,
-  HistoryPage,
+ 
 };
 
 export const routes = routeManifest.map((route) => {

@@ -40,9 +40,10 @@ export function Navbar({ bankName, onDashboardClick }) {
       <Brand>
         <Landmark onClick={()=>{window.location.href="/"}}size={24} />
         {bankName}
+          <LinkText> Best Bank </LinkText>
       </Brand>
       <Links aria-label="Main navigation">
-        <LinkText href="morgagecalculator">Mortgage Calculator</LinkText>
+        <LinkText href="mortgagecalculator">Mortgage Calculator</LinkText>
         <LinkText href="spending">Spending</LinkText>
         <LinkText href="transfer">Transfer</LinkText>
         <LinkText href="credit-score">Credit Score</LinkText>

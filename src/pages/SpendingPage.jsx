@@ -1,4 +1,4 @@
-import { AccountCard, Main, SpendingChart } from "../components";
+import { AccountCard, Main, SpendingChart,Navbar } from "../components";
 import { spending } from "../data/bankingData";
 
 export function SpendingPage() {
@@ -12,6 +12,7 @@ export function SpendingPage() {
 
   return (
     <Main aria-label="Student workspace">
+      <Navbar variant="primary" children={"Credit"}></Navbar>
 <AccountCard name={"Total Balance"} number={4321} balance={"£70853"} change={"Active"} variant={"midnight"} />
 <br />
       <SpendingChart items={data} />
