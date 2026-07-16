@@ -11,10 +11,11 @@ const data = [
  <Main aria-label="Student workspace">
 
 <Navbar variant="primary" children={"Credit"}></Navbar>
-
+<h2>Transfer Money</h2>
 <TransferForm variant="default" ></TransferForm>
 
 <br />
+<h2>Recent Transactions</h2>
       <TransactionList  transactions={data} />
     </Main>
   );

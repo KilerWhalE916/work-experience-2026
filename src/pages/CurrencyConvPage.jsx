@@ -1,4 +1,4 @@
-import { Main, PageHeader, Input, Button } from "../components";
+import { Main, PageHeader, Input, Button,Navbar,Alert } from "../components";
 import { use, useState } from "react";
 const blue500 = "#344d8b";
 
@@ -21,8 +21,9 @@ export function CurrencyConvPage() {
   }
   return (
     <Main aria-label="Student workspace">
+      <Navbar />
       <div
-        style={{ background: "#d5dcef", padding: "20px", borderRadius: "20px" }}
+        style={{ background:"white",borderStyle:"solid",borderWidth:"2px", padding: "20px", borderRadius: "20px" }}
       >
         {reverse && (
           <PageHeader
@@ -45,7 +46,7 @@ export function CurrencyConvPage() {
             onChange={handleChange}
             value={amount}
             placeholder="In GBP(£)"
-            type="text"
+            type="number"
           />
         )}
         {!reverse && (
@@ -54,7 +55,7 @@ export function CurrencyConvPage() {
             onChange={handleChange}
             value={amount}
             placeholder="In USD($)"
-            type="text"
+            type="number"
           />
         )}
         <br />
@@ -66,6 +67,8 @@ export function CurrencyConvPage() {
         <br />
         <Button children="Reverse" onClick={handleReverse} />
       </div>
+      <br />
+        <Alert tone="warning"><b>Exchange Rate Disclaimer</b>: Currency exchange rates fluctuate continuously and may vary throughout the day. Actual conversion rates may differ depending on your financial institution, service provider, fees, and the time the transaction is processed.</Alert>
     </Main>
   );
 }
