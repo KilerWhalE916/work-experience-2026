@@ -5,6 +5,7 @@ import {
   CurrencyConvPage,
   CreditScore,
   MortgageCalc,
+  Navforconv,
 } from "./pages";
 import { routeManifest } from "./routes.manifest";
 
@@ -18,7 +19,7 @@ const routeComponents = {
   TransferPage,
   SpendingPage,
   MortgageCalc,
- 
+ Navforconv,
 };
 
 export const routes = routeManifest.map((route) => {
