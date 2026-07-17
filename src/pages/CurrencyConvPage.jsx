@@ -39,7 +39,14 @@ export function CurrencyConvPage() {
   const [amount, setAmount] = useState(0);
   const [currency, setCurrency] = useState("$");
 
-  const conversionDict = { "$": 1.34 };
+    const conversionDict = {
+    "$": 1.34,
+    "€": 1.17,
+    "¥": 218.29,
+    "₹": 129.48,
+    "AED": 4.95,
+    "AUD$": 1.93,
+  };
   function handleSwitch(e) {}
 
   <br />;
@@ -78,8 +85,13 @@ export function CurrencyConvPage() {
         <div>
           <Bar style={{ borderRadius: "20px", margin: 0, padding: 15 }}>
             <Links aria-label="Main navigation">
-              <Button variant="ghost">$</Button>
-  
+              <Button variant="ghost" onClick={()=>setCurrency("$")}>$</Button>
+              <Button variant="ghost" onClick={()=>setCurrency("€")}>€</Button>
+              <Button variant="ghost" onClick={()=>setCurrency("¥")}>¥</Button>
+              <Button variant="ghost" onClick={()=>setCurrency("₹")}>₹</Button>
+              <Button variant="ghost" onClick={()=>setCurrency("AED")}>AED</Button>
+              <Button variant="ghost" onClick={()=>setCurrency("AUD$")}>AUD$</Button>
+
             </Links>
           </Bar>
         </div>
