@@ -8,19 +8,21 @@ export const routeManifest = [
     path: "/example-page",
     component: "ExamplePage",
     label: "Example Page",
-  },{
-    path: "/Intro",
+  },
+  {
+    path: "/intro",
     component: "Intro",
     label: "Intro",
-  },{
+  },
+  {
     path: "/transfer",
     component: "TransferPage",
     label: "Transfer",
-  },{
+  },
+  {
     path: "/spending",
     component: "SpendingPage",
     label: "Spending",
-    
   },
   {
     path: "/login",
@@ -30,20 +32,20 @@ export const routeManifest = [
   {
     path: "/currency-conv-page",
     component: "CurrencyConvPage",
-    label: "CurrencyConvPage",
+    label: "Currency Converter",
   },
   {
     path: "/credit-score",
     component: "CreditScore",
-    label: "CreditScore",
+    label: "Credit Score",
   },
   {
     path: "/mortgagecalculator",
     component: "MortgageCalc",
-    label: "MortgageCalc",
+    label: "Mortgage Calculator",
   },
   {
-    path: "/navforcon",
+    path: "/navforconv",
     component: "Navforconv",
     label: "Navforconv",
   },
