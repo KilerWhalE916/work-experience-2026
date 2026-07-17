@@ -6,6 +6,7 @@ import {
   Navbar,
   StatCard,
   SpendingChart,
+  Alert
 } from "../components";
 import { use, useState } from "react";
 const blue500 = "#344d8b";
@@ -66,11 +67,11 @@ export function CreditScore() {
       />
       <br />
       <h3>Credit Info</h3>
-      <p>
+      <Alert>
         Your credit score is based on information from your credit history and
         is updated regularly. A higher score may improve your chances of
         qualifying for loans, credit cards, and favorable interest rates.
-      </p>
+      </Alert>
     </Main>
   );
 }
