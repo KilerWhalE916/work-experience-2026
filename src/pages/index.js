@@ -6,4 +6,5 @@ export { CreditScore } from "./CreditScore";
 export { Intro } from "./Intro";
 export { SpendingPage } from "./SpendingPage";
 export { TransferPage } from "./TransferPage";
-export {MortgageCalc} from "./MortgageCalc"
+export {MortgageCalc} from "./MortgageCalc";
+export {Navforconv} from "./Navforconv";

@@ -1,4 +1,5 @@
 import { Main, PageHeader, Input, Button,Navbar,Alert } from "../components";
+import { Navforconv } from "./Navforconv";
 import { use, useState } from "react";
 const blue500 = "#344d8b";
 
@@ -69,6 +70,7 @@ export function CurrencyConvPage() {
       </div>
       <br />
         <Alert tone="warning"><b>Exchange Rate Disclaimer</b>: Currency exchange rates fluctuate continuously and may vary throughout the day. Actual conversion rates may differ depending on your financial institution, service provider, fees, and the time the transaction is processed.</Alert>
+    <Navforconv variant="primary" children={"Credit"}></Navforconv>
     </Main>
   );
 }

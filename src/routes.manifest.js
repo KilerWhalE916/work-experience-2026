@@ -42,4 +42,9 @@ export const routeManifest = [
     component: "MortgageCalc",
     label: "MortgageCalc",
   },
+  {
+    path: "/navforcon",
+    component: "Navforconv",
+    label: "Navforconv",
+  },
 ];
